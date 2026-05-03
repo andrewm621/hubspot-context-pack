@@ -1,0 +1,257 @@
+{
+  "version": 2,
+  "generatedAt": "2026-05-03T18:45:48.236Z",
+  "skillCount": 8,
+  "skills": {
+    "associations": {
+      "name": "associations",
+      "description": "HubSpot Associations v4 — linking CRM objects, association type IDs, custom labels, batch operations, and schema management.",
+      "priority": 6,
+      "pathPatterns": [
+        "**/associations/**",
+        "**/association*"
+      ],
+      "pathRegexSources": [
+        "(?:^|/)(?:.*\\/)?associations/.*$",
+        "(?:^|/)(?:.*\\/)?association[^/]*$"
+      ],
+      "bashPatterns": [],
+      "bashRegexSources": [],
+      "importPatterns": [
+        "@hubspot/api-client"
+      ],
+      "promptSignals": [
+        "hubspot association",
+        "crm association",
+        "object relationship",
+        "link contact company",
+        "associate deal",
+        "association type",
+        "association label"
+      ],
+      "docs": [
+        "https://developers.hubspot.com/docs/api/crm/associations"
+      ]
+    },
+    "companies": {
+      "name": "companies",
+      "description": "HubSpot CRM Companies — CRUD, search, domain-based deduplication, and associations with contacts and deals.",
+      "priority": 7,
+      "pathPatterns": [
+        "**/companies/**",
+        "**/company*"
+      ],
+      "pathRegexSources": [
+        "(?:^|/)(?:.*\\/)?companies/.*$",
+        "(?:^|/)(?:.*\\/)?company[^/]*$"
+      ],
+      "bashPatterns": [],
+      "bashRegexSources": [],
+      "importPatterns": [
+        "@hubspot/api-client"
+      ],
+      "promptSignals": [
+        "hubspot company",
+        "company property",
+        "crm company",
+        "create company",
+        "update company",
+        "search companies",
+        "company domain"
+      ],
+      "docs": [
+        "https://developers.hubspot.com/docs/api/crm/companies"
+      ]
+    },
+    "contacts": {
+      "name": "contacts",
+      "description": "HubSpot CRM Contacts — CRUD, search, property management, contact lists, and associations.",
+      "priority": 8,
+      "pathPatterns": [
+        "**/contacts/**",
+        "**/contact*"
+      ],
+      "pathRegexSources": [
+        "(?:^|/)(?:.*\\/)?contacts/.*$",
+        "(?:^|/)(?:.*\\/)?contact[^/]*$"
+      ],
+      "bashPatterns": [],
+      "bashRegexSources": [],
+      "importPatterns": [
+        "@hubspot/api-client"
+      ],
+      "promptSignals": [
+        "hubspot contact",
+        "contact property",
+        "contact list",
+        "crm contact",
+        "create contact",
+        "update contact",
+        "search contacts",
+        "contact merge"
+      ],
+      "docs": [
+        "https://developers.hubspot.com/docs/api/crm/contacts"
+      ]
+    },
+    "custom-objects": {
+      "name": "custom-objects",
+      "description": "HubSpot Custom Objects — schema definition, property configuration, associations, and CRUD for non-standard CRM objects.",
+      "priority": 7,
+      "pathPatterns": [
+        "**/custom-objects/**",
+        "**/schemas/**"
+      ],
+      "pathRegexSources": [
+        "(?:^|/)(?:.*\\/)?custom-objects/.*$",
+        "(?:^|/)(?:.*\\/)?schemas/.*$"
+      ],
+      "bashPatterns": [],
+      "bashRegexSources": [],
+      "importPatterns": [
+        "@hubspot/api-client"
+      ],
+      "promptSignals": [
+        "custom object",
+        "hubspot schema",
+        "object definition",
+        "custom crm object",
+        "crm schema",
+        "object type",
+        "custom properties schema"
+      ],
+      "docs": [
+        "https://developers.hubspot.com/docs/api/crm/crm-custom-objects"
+      ]
+    },
+    "deals": {
+      "name": "deals",
+      "description": "HubSpot CRM Deals — CRUD, pipeline and stage management, associations, and deal property patterns.",
+      "priority": 7,
+      "pathPatterns": [
+        "**/deals/**",
+        "**/deal*",
+        "**/pipeline*"
+      ],
+      "pathRegexSources": [
+        "(?:^|/)(?:.*\\/)?deals/.*$",
+        "(?:^|/)(?:.*\\/)?deal[^/]*$",
+        "(?:^|/)(?:.*\\/)?pipeline[^/]*$"
+      ],
+      "bashPatterns": [],
+      "bashRegexSources": [],
+      "importPatterns": [
+        "@hubspot/api-client"
+      ],
+      "promptSignals": [
+        "hubspot deal",
+        "deal pipeline",
+        "deal stage",
+        "crm deal",
+        "create deal",
+        "update deal",
+        "deal amount",
+        "close date",
+        "sales pipeline"
+      ],
+      "docs": [
+        "https://developers.hubspot.com/docs/api/crm/deals"
+      ]
+    },
+    "hubspot-auth": {
+      "name": "hubspot-auth",
+      "description": "HubSpot authentication — Private App tokens, OAuth 2.0 flows, scopes, and token lifecycle management.",
+      "priority": 8,
+      "pathPatterns": [
+        "*.hubspot.*",
+        "hubspot/**",
+        "**/.env*"
+      ],
+      "pathRegexSources": [
+        "(?:^|/)[^/]*\\.hubspot\\.[^/]*$",
+        "(?:^|/)hubspot/.*$",
+        "(?:^|/)(?:.*\\/)?\\.env[^/]*$"
+      ],
+      "bashPatterns": [],
+      "bashRegexSources": [],
+      "importPatterns": [
+        "@hubspot/api-client"
+      ],
+      "promptSignals": [
+        "hubspot auth",
+        "private app",
+        "hubspot oauth",
+        "hubspot token",
+        "hubspot api key",
+        "hubspot access token",
+        "hubspot scopes"
+      ],
+      "docs": [
+        "https://developers.hubspot.com/docs/api/private-apps",
+        "https://developers.hubspot.com/docs/api/working-with-oauth"
+      ]
+    },
+    "webhooks": {
+      "name": "webhooks",
+      "description": "HubSpot Webhooks — subscription types, payload format, signature verification (v1 and v3), retry policy, and rate limits.",
+      "priority": 6,
+      "pathPatterns": [
+        "**/webhooks/**",
+        "**/webhook*"
+      ],
+      "pathRegexSources": [
+        "(?:^|/)(?:.*\\/)?webhooks/.*$",
+        "(?:^|/)(?:.*\\/)?webhook[^/]*$"
+      ],
+      "bashPatterns": [],
+      "bashRegexSources": [],
+      "importPatterns": [
+        "@hubspot/api-client"
+      ],
+      "promptSignals": [
+        "hubspot webhook",
+        "webhook subscription",
+        "hubspot event",
+        "webhook verification",
+        "hubspot notification",
+        "crm webhook",
+        "webhook payload"
+      ],
+      "docs": [
+        "https://developers.hubspot.com/docs/api/webhooks"
+      ]
+    },
+    "workflows": {
+      "name": "workflows",
+      "description": "HubSpot Workflows — automation triggers, actions, branching logic, and custom code actions for contact/company/deal-based automation.",
+      "priority": 6,
+      "pathPatterns": [
+        "**/workflows/**",
+        "**/workflow*",
+        "**/automation/**"
+      ],
+      "pathRegexSources": [
+        "(?:^|/)(?:.*\\/)?workflows/.*$",
+        "(?:^|/)(?:.*\\/)?workflow[^/]*$",
+        "(?:^|/)(?:.*\\/)?automation/.*$"
+      ],
+      "bashPatterns": [],
+      "bashRegexSources": [],
+      "importPatterns": [
+        "@hubspot/api-client"
+      ],
+      "promptSignals": [
+        "hubspot workflow",
+        "hubspot automation",
+        "hubspot trigger",
+        "workflow action",
+        "enrollment criteria",
+        "custom code action",
+        "workflow branch"
+      ],
+      "docs": [
+        "https://developers.hubspot.com/docs/api/automation/workflows"
+      ]
+    }
+  }
+}
