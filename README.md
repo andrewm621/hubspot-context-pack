@@ -10,7 +10,7 @@ claude plugin add /path/to/hubspot-context-pack
 
 Or from GitHub (once published):
 ```bash
-claude plugin add github:andrewtmiller/hubspot-context-pack
+claude plugin add github:andrewm621/hubspot-context-pack
 ```
 
 ## How It Works
@@ -27,7 +27,7 @@ The plugin uses Claude Code's hook system to automatically inject relevant HubSp
 
 ## Skills
 
-8 skills covering the HubSpot platform domains a developer actually touches:
+17 skills covering the HubSpot platform domains a developer actually touches:
 
 ### Tier 1 — Core (Priority 8)
 | Skill | Domain | Key Topics |
@@ -42,12 +42,25 @@ The plugin uses Claude Code's hook system to automatically inject relevant HubSp
 | `deals` | CRM Deals | CRUD, pipelines, stages, associations |
 | `custom-objects` | Custom Objects | Schema definition, properties, associations |
 
-### Tier 2 — Extended (Priority 6)
+### Tier 2 — Extended (Priority 5-6)
 | Skill | Domain | Key Topics |
 |-------|--------|------------|
 | `workflows` | Automation | Triggers, actions, branching, custom code |
 | `webhooks` | Webhooks | Subscriptions, verification, retry policy |
 | `associations` | Associations | Types, labels, batch operations, schemas |
+| `properties` | Properties | Custom properties, groups, options, calculated |
+| `tickets` | Service Hub | Pipelines, SLAs, support ticket management |
+| `email-marketing` | Email | Transactional, marketing, subscriptions |
+| `forms` | Forms | Submission API, fields, progressive profiling |
+| `lists` | Lists | Static vs active, membership, segmentation |
+
+### Tier 3 — Specialized (Priority 4)
+| Skill | Domain | Key Topics |
+|-------|--------|------------|
+| `cms` | CMS Hub | Pages, blog, HubDB, templates, HubL |
+| `reporting` | Analytics | Reports, attribution, traffic analytics |
+| `conversations` | Conversations | Inbox, threads, chat, custom channels |
+| `crm-extensions` | UI Extensions | CRM cards, timeline events, calling |
 
 ## Skill Format
 

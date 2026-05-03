@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-05-03T18:45:48.236Z",
-  "skillCount": 8,
+  "generatedAt": "2026-05-03T19:00:21.558Z",
+  "skillCount": 17,
   "skills": {
     "associations": {
       "name": "associations",
@@ -31,6 +31,50 @@
       ],
       "docs": [
         "https://developers.hubspot.com/docs/api/crm/associations"
+      ]
+    },
+    "cms": {
+      "name": "cms",
+      "description": "HubSpot CMS API — pages, blog posts, templates, modules, HubDB, site tree. Use when building or managing HubSpot-hosted content programmatically.",
+      "priority": 4,
+      "pathPatterns": [
+        "**/cms/**",
+        "**/pages/**",
+        "**/blog/**",
+        "**/templates/**",
+        "**/*.hubl",
+        "**/*.html"
+      ],
+      "pathRegexSources": [
+        "(?:^|/)(?:.*\\/)?cms/.*$",
+        "(?:^|/)(?:.*\\/)?pages/.*$",
+        "(?:^|/)(?:.*\\/)?blog/.*$",
+        "(?:^|/)(?:.*\\/)?templates/.*$",
+        "(?:^|/)(?:.*\\/)?[^/]*\\.hubl$",
+        "(?:^|/)(?:.*\\/)?[^/]*\\.html$"
+      ],
+      "bashPatterns": [
+        "\\bhs\\s+(upload|fetch|watch|create)\\b"
+      ],
+      "bashRegexSources": [
+        "\\bhs\\s+(upload|fetch|watch|create)\\b"
+      ],
+      "importPatterns": [
+        "@hubspot/api-client",
+        "@hubspot/cli"
+      ],
+      "promptSignals": [
+        "hubspot cms",
+        "hubspot page",
+        "hubspot blog",
+        "hubdb",
+        "hubl",
+        "hubspot template",
+        "hubspot module",
+        "site page"
+      ],
+      "docs": [
+        "https://developers.hubspot.com/docs/api/cms"
       ]
     },
     "companies": {
@@ -92,6 +136,78 @@
       ],
       "docs": [
         "https://developers.hubspot.com/docs/api/crm/contacts"
+      ]
+    },
+    "conversations": {
+      "name": "conversations",
+      "description": "HubSpot Conversations API — inbox, threads, messages, chatbots, live chat, channels. Use when building chat integrations or managing conversation data.",
+      "priority": 4,
+      "pathPatterns": [
+        "**/conversations/**",
+        "**/chat/**",
+        "**/inbox/**"
+      ],
+      "pathRegexSources": [
+        "(?:^|/)(?:.*\\/)?conversations/.*$",
+        "(?:^|/)(?:.*\\/)?chat/.*$",
+        "(?:^|/)(?:.*\\/)?inbox/.*$"
+      ],
+      "bashPatterns": [],
+      "bashRegexSources": [],
+      "importPatterns": [
+        "@hubspot/api-client"
+      ],
+      "promptSignals": [
+        "hubspot conversation",
+        "hubspot chat",
+        "hubspot inbox",
+        "live chat",
+        "chatbot",
+        "hubspot thread",
+        "hubspot message",
+        "conversations api"
+      ],
+      "docs": [
+        "https://developers.hubspot.com/docs/api/conversations"
+      ]
+    },
+    "crm-extensions": {
+      "name": "crm-extensions",
+      "description": "HubSpot CRM Extensions — custom cards, UI extensions, custom actions, timeline events, calling. Use when building custom UI within the HubSpot CRM interface.",
+      "priority": 4,
+      "pathPatterns": [
+        "**/extensions/**",
+        "**/cards/**",
+        "**/ui-extensions/**",
+        "app.json"
+      ],
+      "pathRegexSources": [
+        "(?:^|/)(?:.*\\/)?extensions/.*$",
+        "(?:^|/)(?:.*\\/)?cards/.*$",
+        "(?:^|/)(?:.*\\/)?ui-extensions/.*$",
+        "(?:^|/)app\\.json$"
+      ],
+      "bashPatterns": [
+        "\\bhs\\s+project\\b"
+      ],
+      "bashRegexSources": [
+        "\\bhs\\s+project\\b"
+      ],
+      "importPatterns": [
+        "@hubspot/ui-extensions",
+        "@hubspot/api-client"
+      ],
+      "promptSignals": [
+        "crm extension",
+        "custom card",
+        "ui extension",
+        "hubspot card",
+        "timeline event",
+        "calling extension",
+        "crm sidebar"
+      ],
+      "docs": [
+        "https://developers.hubspot.com/docs/api/crm/extensions"
       ]
     },
     "custom-objects": {
@@ -158,6 +274,74 @@
         "https://developers.hubspot.com/docs/api/crm/deals"
       ]
     },
+    "email-marketing": {
+      "name": "email-marketing",
+      "description": "HubSpot Email Marketing API — sending transactional and marketing emails, email templates, subscription management, analytics. Use when building email integrations.",
+      "priority": 5,
+      "pathPatterns": [
+        "**/email/**",
+        "**/emails/**",
+        "**/marketing/**"
+      ],
+      "pathRegexSources": [
+        "(?:^|/)(?:.*\\/)?email/.*$",
+        "(?:^|/)(?:.*\\/)?emails/.*$",
+        "(?:^|/)(?:.*\\/)?marketing/.*$"
+      ],
+      "bashPatterns": [
+        "\\bhs\\s+email\\b"
+      ],
+      "bashRegexSources": [
+        "\\bhs\\s+email\\b"
+      ],
+      "importPatterns": [
+        "@hubspot/api-client"
+      ],
+      "promptSignals": [
+        "hubspot email",
+        "transactional email",
+        "marketing email",
+        "email template",
+        "subscription",
+        "email analytics",
+        "single send"
+      ],
+      "docs": [
+        "https://developers.hubspot.com/docs/api/marketing/transactional-emails"
+      ]
+    },
+    "forms": {
+      "name": "forms",
+      "description": "HubSpot Forms API — form creation, submission handling, form fields, progressive profiling, file uploads. Use when building form integrations or processing submissions.",
+      "priority": 5,
+      "pathPatterns": [
+        "**/forms/**",
+        "**/form*"
+      ],
+      "pathRegexSources": [
+        "(?:^|/)(?:.*\\/)?forms/.*$",
+        "(?:^|/)(?:.*\\/)?form[^/]*$"
+      ],
+      "bashPatterns": [
+        "\\bhs\\s+forms?\\b"
+      ],
+      "bashRegexSources": [
+        "\\bhs\\s+forms?\\b"
+      ],
+      "importPatterns": [
+        "@hubspot/api-client"
+      ],
+      "promptSignals": [
+        "hubspot form",
+        "form submission",
+        "form field",
+        "progressive profiling",
+        "form embed"
+      ],
+      "docs": [
+        "https://developers.hubspot.com/docs/api/marketing/forms"
+      ]
+    },
     "hubspot-auth": {
       "name": "hubspot-auth",
       "description": "HubSpot authentication — Private App tokens, OAuth 2.0 flows, scopes, and token lifecycle management.",
@@ -189,6 +373,128 @@
       "docs": [
         "https://developers.hubspot.com/docs/api/private-apps",
         "https://developers.hubspot.com/docs/api/working-with-oauth"
+      ]
+    },
+    "lists": {
+      "name": "lists",
+      "description": "HubSpot Lists API — contact lists, company lists, static vs active lists, list membership, filtering. Use when segmenting contacts or building audience management.",
+      "priority": 5,
+      "pathPatterns": [
+        "**/lists/**",
+        "**/segments/**"
+      ],
+      "pathRegexSources": [
+        "(?:^|/)(?:.*\\/)?lists/.*$",
+        "(?:^|/)(?:.*\\/)?segments/.*$"
+      ],
+      "bashPatterns": [],
+      "bashRegexSources": [],
+      "importPatterns": [
+        "@hubspot/api-client"
+      ],
+      "promptSignals": [
+        "hubspot list",
+        "contact list",
+        "active list",
+        "static list",
+        "list membership",
+        "segment"
+      ],
+      "docs": [
+        "https://developers.hubspot.com/docs/api/crm/lists"
+      ]
+    },
+    "properties": {
+      "name": "properties",
+      "description": "HubSpot Properties API — custom properties, property groups, property options, calculated properties. Use when extending the CRM data model.",
+      "priority": 6,
+      "pathPatterns": [
+        "**/properties/**",
+        "**/property*"
+      ],
+      "pathRegexSources": [
+        "(?:^|/)(?:.*\\/)?properties/.*$",
+        "(?:^|/)(?:.*\\/)?property[^/]*$"
+      ],
+      "bashPatterns": [],
+      "bashRegexSources": [],
+      "importPatterns": [
+        "@hubspot/api-client"
+      ],
+      "promptSignals": [
+        "hubspot property",
+        "custom property",
+        "property group",
+        "property options",
+        "calculated property",
+        "property type",
+        "crm property"
+      ],
+      "docs": [
+        "https://developers.hubspot.com/docs/api/crm/properties"
+      ]
+    },
+    "reporting": {
+      "name": "reporting",
+      "description": "HubSpot Reporting and Analytics API — custom reports, analytics, attribution, deal forecasting. Use when building dashboards or extracting HubSpot analytics data.",
+      "priority": 4,
+      "pathPatterns": [
+        "**/reports/**",
+        "**/analytics/**",
+        "**/dashboard/**"
+      ],
+      "pathRegexSources": [
+        "(?:^|/)(?:.*\\/)?reports/.*$",
+        "(?:^|/)(?:.*\\/)?analytics/.*$",
+        "(?:^|/)(?:.*\\/)?dashboard/.*$"
+      ],
+      "bashPatterns": [],
+      "bashRegexSources": [],
+      "importPatterns": [
+        "@hubspot/api-client"
+      ],
+      "promptSignals": [
+        "hubspot report",
+        "hubspot analytics",
+        "hubspot dashboard",
+        "attribution",
+        "deal forecast",
+        "funnel report",
+        "traffic analytics"
+      ],
+      "docs": [
+        "https://developers.hubspot.com/docs/api/analytics"
+      ]
+    },
+    "tickets": {
+      "name": "tickets",
+      "description": "HubSpot Tickets API — support tickets, pipelines, SLAs, associations with contacts/companies. Use when building help desk or support integrations.",
+      "priority": 5,
+      "pathPatterns": [
+        "**/tickets/**",
+        "**/ticket*",
+        "**/support/**"
+      ],
+      "pathRegexSources": [
+        "(?:^|/)(?:.*\\/)?tickets/.*$",
+        "(?:^|/)(?:.*\\/)?ticket[^/]*$",
+        "(?:^|/)(?:.*\\/)?support/.*$"
+      ],
+      "bashPatterns": [],
+      "bashRegexSources": [],
+      "importPatterns": [
+        "@hubspot/api-client"
+      ],
+      "promptSignals": [
+        "hubspot ticket",
+        "support ticket",
+        "ticket pipeline",
+        "help desk",
+        "service hub",
+        "ticket property"
+      ],
+      "docs": [
+        "https://developers.hubspot.com/docs/api/crm/tickets"
       ]
     },
     "webhooks": {
