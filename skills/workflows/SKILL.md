@@ -1,25 +1,29 @@
 ---
-name: workflows
-description: HubSpot Workflows — automation triggers, actions, branching logic, and custom code actions for contact/company/deal-based automation.
+strata_id: 21a29fe6-a6b3-4fb7-8526-05a534d10828
+type: note
+created: 2026-05-03T18:44:06+00:00
+modified: 2026-05-03T18:44:06.669871732+00:00
 metadata:
-  priority: 6
-  pathPatterns:
-    - "**/workflows/**"
-    - "**/workflow*"
-    - "**/automation/**"
+  docs:
+  - https://developers.hubspot.com/docs/api/automation/workflows
   importPatterns:
-    - "@hubspot/api-client"
+  - '@hubspot/api-client'
+  pathPatterns:
+  - '**/workflows/**'
+  - '**/workflow*'
+  - '**/automation/**'
+  priority: 6
   promptSignals:
     phrases:
-      - "hubspot workflow"
-      - "hubspot automation"
-      - "hubspot trigger"
-      - "workflow action"
-      - "enrollment criteria"
-      - "custom code action"
-      - "workflow branch"
-  docs:
-    - "https://developers.hubspot.com/docs/api/automation/workflows"
+    - hubspot workflow
+    - hubspot automation
+    - hubspot trigger
+    - workflow action
+    - enrollment criteria
+    - custom code action
+    - workflow branch
+name: workflows
+description: HubSpot Workflows — automation triggers, actions, branching logic, and custom code actions for contact/company/deal-based automation.
 ---
 
 ## What It Is & When to Use It

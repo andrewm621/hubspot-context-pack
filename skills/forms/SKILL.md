@@ -1,24 +1,28 @@
 ---
-name: forms
+strata_id: 3c2d2f55-f142-4684-8ec8-da6f59d1152a
+type: note
+created: 2026-05-03T18:58:27+00:00
+modified: 2026-05-03T18:58:27.201119617+00:00
 description: HubSpot Forms API — form creation, submission handling, form fields, progressive profiling, file uploads. Use when building form integrations or processing submissions.
 metadata:
-  priority: 5
-  docs:
-    - "https://developers.hubspot.com/docs/api/marketing/forms"
-  pathPatterns:
-    - '**/forms/**'
-    - '**/form*'
   bashPatterns:
-    - '\bhs\s+forms?\b'
+  - \bhs\s+forms?\b
+  docs:
+  - https://developers.hubspot.com/docs/api/marketing/forms
   importPatterns:
-    - "@hubspot/api-client"
+  - '@hubspot/api-client'
+  pathPatterns:
+  - '**/forms/**'
+  - '**/form*'
+  priority: 5
   promptSignals:
     phrases:
-      - "hubspot form"
-      - "form submission"
-      - "form field"
-      - "progressive profiling"
-      - "form embed"
+    - hubspot form
+    - form submission
+    - form field
+    - progressive profiling
+    - form embed
+name: forms
 ---
 
 ## What It Is & When to Use It

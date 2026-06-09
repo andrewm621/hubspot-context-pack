@@ -1,24 +1,28 @@
 ---
-name: webhooks
-description: HubSpot Webhooks — subscription types, payload format, signature verification (v1 and v3), retry policy, and rate limits.
+strata_id: 8e7f3b1b-86da-479b-bcd7-818610a9c0da
+type: note
+created: 2026-05-03T18:44:46+00:00
+modified: 2026-05-03T18:44:46.734810111+00:00
 metadata:
-  priority: 6
-  pathPatterns:
-    - "**/webhooks/**"
-    - "**/webhook*"
+  docs:
+  - https://developers.hubspot.com/docs/api/webhooks
   importPatterns:
-    - "@hubspot/api-client"
+  - '@hubspot/api-client'
+  pathPatterns:
+  - '**/webhooks/**'
+  - '**/webhook*'
+  priority: 6
   promptSignals:
     phrases:
-      - "hubspot webhook"
-      - "webhook subscription"
-      - "hubspot event"
-      - "webhook verification"
-      - "hubspot notification"
-      - "crm webhook"
-      - "webhook payload"
-  docs:
-    - "https://developers.hubspot.com/docs/api/webhooks"
+    - hubspot webhook
+    - webhook subscription
+    - hubspot event
+    - webhook verification
+    - hubspot notification
+    - crm webhook
+    - webhook payload
+description: HubSpot Webhooks — subscription types, payload format, signature verification (v1 and v3), retry policy, and rate limits.
+name: webhooks
 ---
 
 ## What It Is & When to Use It

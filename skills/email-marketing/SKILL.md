@@ -1,27 +1,31 @@
 ---
-name: email-marketing
+strata_id: 1c5b37fc-16eb-4685-be38-3371f542233f
+type: note
+created: 2026-05-03T18:57:00+00:00
+modified: 2026-05-03T18:57:00.469282002+00:00
 description: HubSpot Email Marketing API — sending transactional and marketing emails, email templates, subscription management, analytics. Use when building email integrations.
 metadata:
-  priority: 5
-  docs:
-    - "https://developers.hubspot.com/docs/api/marketing/transactional-emails"
-  pathPatterns:
-    - '**/email/**'
-    - '**/emails/**'
-    - '**/marketing/**'
   bashPatterns:
-    - '\bhs\s+email\b'
+  - \bhs\s+email\b
+  docs:
+  - https://developers.hubspot.com/docs/api/marketing/transactional-emails
   importPatterns:
-    - "@hubspot/api-client"
+  - '@hubspot/api-client'
+  pathPatterns:
+  - '**/email/**'
+  - '**/emails/**'
+  - '**/marketing/**'
+  priority: 5
   promptSignals:
     phrases:
-      - "hubspot email"
-      - "transactional email"
-      - "marketing email"
-      - "email template"
-      - "subscription"
-      - "email analytics"
-      - "single send"
+    - hubspot email
+    - transactional email
+    - marketing email
+    - email template
+    - subscription
+    - email analytics
+    - single send
+name: email-marketing
 ---
 
 ## What It Is & When to Use It

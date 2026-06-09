@@ -1,27 +1,31 @@
 ---
-name: conversations
+strata_id: dcd9f4bc-5e2f-479e-80d0-02e99c268aed
+type: note
+created: 2026-05-03T18:59:44+00:00
+modified: 2026-05-03T18:59:44.165707721+00:00
 description: HubSpot Conversations API — inbox, threads, messages, chatbots, live chat, channels. Use when building chat integrations or managing conversation data.
 metadata:
-  priority: 4
-  docs:
-    - "https://developers.hubspot.com/docs/api/conversations"
-  pathPatterns:
-    - '**/conversations/**'
-    - '**/chat/**'
-    - '**/inbox/**'
   bashPatterns: []
+  docs:
+  - https://developers.hubspot.com/docs/api/conversations
   importPatterns:
-    - "@hubspot/api-client"
+  - '@hubspot/api-client'
+  pathPatterns:
+  - '**/conversations/**'
+  - '**/chat/**'
+  - '**/inbox/**'
+  priority: 4
   promptSignals:
     phrases:
-      - "hubspot conversation"
-      - "hubspot chat"
-      - "hubspot inbox"
-      - "live chat"
-      - "chatbot"
-      - "hubspot thread"
-      - "hubspot message"
-      - "conversations api"
+    - hubspot conversation
+    - hubspot chat
+    - hubspot inbox
+    - live chat
+    - chatbot
+    - hubspot thread
+    - hubspot message
+    - conversations api
+name: conversations
 ---
 
 ## What It Is & When to Use It

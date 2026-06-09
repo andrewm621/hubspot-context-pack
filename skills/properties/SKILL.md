@@ -1,25 +1,29 @@
 ---
+strata_id: 536ca8d8-eda3-46c7-af24-b7de959c96b0
+type: note
+created: 2026-05-03T18:58:39+00:00
+modified: 2026-05-03T18:58:39.425134663+00:00
 name: properties
 description: HubSpot Properties API — custom properties, property groups, property options, calculated properties. Use when extending the CRM data model.
 metadata:
-  priority: 6
-  docs:
-    - "https://developers.hubspot.com/docs/api/crm/properties"
-  pathPatterns:
-    - '**/properties/**'
-    - '**/property*'
   bashPatterns: []
+  docs:
+  - https://developers.hubspot.com/docs/api/crm/properties
   importPatterns:
-    - "@hubspot/api-client"
+  - '@hubspot/api-client'
+  pathPatterns:
+  - '**/properties/**'
+  - '**/property*'
+  priority: 6
   promptSignals:
     phrases:
-      - "hubspot property"
-      - "custom property"
-      - "property group"
-      - "property options"
-      - "calculated property"
-      - "property type"
-      - "crm property"
+    - hubspot property
+    - custom property
+    - property group
+    - property options
+    - calculated property
+    - property type
+    - crm property
 ---
 
 ## What It Is & When to Use It

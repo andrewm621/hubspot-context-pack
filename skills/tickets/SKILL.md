@@ -1,25 +1,29 @@
 ---
-name: tickets
-description: HubSpot Tickets API — support tickets, pipelines, SLAs, associations with contacts/companies. Use when building help desk or support integrations.
+strata_id: b60ec3f3-b0f0-43f7-9fce-692cbff85689
+type: note
+created: 2026-05-03T18:57:34+00:00
+modified: 2026-05-03T18:57:34.479591454+00:00
 metadata:
-  priority: 5
-  docs:
-    - "https://developers.hubspot.com/docs/api/crm/tickets"
-  pathPatterns:
-    - '**/tickets/**'
-    - '**/ticket*'
-    - '**/support/**'
   bashPatterns: []
+  docs:
+  - https://developers.hubspot.com/docs/api/crm/tickets
   importPatterns:
-    - "@hubspot/api-client"
+  - '@hubspot/api-client'
+  pathPatterns:
+  - '**/tickets/**'
+  - '**/ticket*'
+  - '**/support/**'
+  priority: 5
   promptSignals:
     phrases:
-      - "hubspot ticket"
-      - "support ticket"
-      - "ticket pipeline"
-      - "help desk"
-      - "service hub"
-      - "ticket property"
+    - hubspot ticket
+    - support ticket
+    - ticket pipeline
+    - help desk
+    - service hub
+    - ticket property
+name: tickets
+description: HubSpot Tickets API — support tickets, pipelines, SLAs, associations with contacts/companies. Use when building help desk or support integrations.
 ---
 
 ## What It Is & When to Use It

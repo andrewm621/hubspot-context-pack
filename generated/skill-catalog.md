@@ -1,3 +1,10 @@
+---
+strata_id: cea90f8d-9c9c-4106-9a80-b4a0f0b1b5a8
+type: note
+created: 2026-05-03T18:45:25+00:00
+modified: 2026-05-03T19:00:21.608396630+00:00
+---
+
 # HubSpot Context Pack — Skill Catalog
 
 > Auto-generated on 2026-05-03. 17 skills.

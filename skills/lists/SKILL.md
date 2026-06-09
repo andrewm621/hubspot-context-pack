@@ -1,24 +1,28 @@
 ---
+strata_id: 0f95da49-8334-4529-92e3-2585624afc7a
+type: note
+created: 2026-05-03T18:59:47+00:00
+modified: 2026-05-03T18:59:47.447873136+00:00
 name: lists
 description: HubSpot Lists API — contact lists, company lists, static vs active lists, list membership, filtering. Use when segmenting contacts or building audience management.
 metadata:
-  priority: 5
-  docs:
-    - "https://developers.hubspot.com/docs/api/crm/lists"
-  pathPatterns:
-    - '**/lists/**'
-    - '**/segments/**'
   bashPatterns: []
+  docs:
+  - https://developers.hubspot.com/docs/api/crm/lists
   importPatterns:
-    - "@hubspot/api-client"
+  - '@hubspot/api-client'
+  pathPatterns:
+  - '**/lists/**'
+  - '**/segments/**'
+  priority: 5
   promptSignals:
     phrases:
-      - "hubspot list"
-      - "contact list"
-      - "active list"
-      - "static list"
-      - "list membership"
-      - "segment"
+    - hubspot list
+    - contact list
+    - active list
+    - static list
+    - list membership
+    - segment
 ---
 
 ## What It Is & When to Use It

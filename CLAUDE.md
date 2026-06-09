@@ -1,3 +1,10 @@
+---
+strata_id: 29d6739d-0d4e-4a55-b28e-7e252e29f035
+type: note
+created: 2026-05-03T18:39:33+00:00
+modified: 2026-05-03T18:39:33.460374472+00:00
+---
+
 # HubSpot Context Pack — Development Guide
 
 ## What This Is

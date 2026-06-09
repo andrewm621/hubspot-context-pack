@@ -1,27 +1,31 @@
 ---
-name: deals
+strata_id: e07d8531-21dd-489f-b89b-95777f820308
+type: note
+created: 2026-05-03T18:42:54+00:00
+modified: 2026-05-03T18:42:54.266652910+00:00
 description: HubSpot CRM Deals — CRUD, pipeline and stage management, associations, and deal property patterns.
 metadata:
-  priority: 7
-  pathPatterns:
-    - "**/deals/**"
-    - "**/deal*"
-    - "**/pipeline*"
+  docs:
+  - https://developers.hubspot.com/docs/api/crm/deals
   importPatterns:
-    - "@hubspot/api-client"
+  - '@hubspot/api-client'
+  pathPatterns:
+  - '**/deals/**'
+  - '**/deal*'
+  - '**/pipeline*'
+  priority: 7
   promptSignals:
     phrases:
-      - "hubspot deal"
-      - "deal pipeline"
-      - "deal stage"
-      - "crm deal"
-      - "create deal"
-      - "update deal"
-      - "deal amount"
-      - "close date"
-      - "sales pipeline"
-  docs:
-    - "https://developers.hubspot.com/docs/api/crm/deals"
+    - hubspot deal
+    - deal pipeline
+    - deal stage
+    - crm deal
+    - create deal
+    - update deal
+    - deal amount
+    - close date
+    - sales pipeline
+name: deals
 ---
 
 ## What It Is & When to Use It

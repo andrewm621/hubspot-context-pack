@@ -1,26 +1,30 @@
 ---
-name: hubspot-auth
+strata_id: 013e0e4c-0405-4616-8498-17ea366c116b
+type: note
+created: 2026-05-03T18:41:21+00:00
+modified: 2026-05-03T18:41:21.040906177+00:00
 description: HubSpot authentication — Private App tokens, OAuth 2.0 flows, scopes, and token lifecycle management.
 metadata:
-  priority: 8
-  pathPatterns:
-    - "*.hubspot.*"
-    - "hubspot/**"
-    - "**/.env*"
+  docs:
+  - https://developers.hubspot.com/docs/api/private-apps
+  - https://developers.hubspot.com/docs/api/working-with-oauth
   importPatterns:
-    - "@hubspot/api-client"
+  - '@hubspot/api-client'
+  pathPatterns:
+  - '*.hubspot.*'
+  - hubspot/**
+  - '**/.env*'
+  priority: 8
   promptSignals:
     phrases:
-      - "hubspot auth"
-      - "private app"
-      - "hubspot oauth"
-      - "hubspot token"
-      - "hubspot api key"
-      - "hubspot access token"
-      - "hubspot scopes"
-  docs:
-    - "https://developers.hubspot.com/docs/api/private-apps"
-    - "https://developers.hubspot.com/docs/api/working-with-oauth"
+    - hubspot auth
+    - private app
+    - hubspot oauth
+    - hubspot token
+    - hubspot api key
+    - hubspot access token
+    - hubspot scopes
+name: hubspot-auth
 ---
 
 ## What It Is & When to Use It

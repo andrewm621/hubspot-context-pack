@@ -1,3 +1,10 @@
+---
+strata_id: eb24fc78-4a39-436f-ba84-69c9b580990b
+type: note
+created: 2026-05-03T19:00:53+00:00
+modified: 2026-05-03T19:00:53.883786653+00:00
+---
+
 # HubSpot Context Pack
 
 A Claude Code plugin that provides AI-consumable knowledge about the HubSpot platform and APIs. When you're working with HubSpot files, running CLI commands, or discussing HubSpot topics, relevant guidance is automatically injected into your conversation.

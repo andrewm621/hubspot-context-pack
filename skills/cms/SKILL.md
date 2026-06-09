@@ -1,32 +1,36 @@
 ---
-name: cms
-description: HubSpot CMS API — pages, blog posts, templates, modules, HubDB, site tree. Use when building or managing HubSpot-hosted content programmatically.
+strata_id: b37ce334-0bac-4fdf-90e7-cf278dd7ae68
+type: note
+created: 2026-05-03T18:57:19+00:00
+modified: 2026-05-03T18:57:19.343674364+00:00
 metadata:
-  priority: 4
-  docs:
-    - "https://developers.hubspot.com/docs/api/cms"
-  pathPatterns:
-    - '**/cms/**'
-    - '**/pages/**'
-    - '**/blog/**'
-    - '**/templates/**'
-    - '**/*.hubl'
-    - '**/*.html'
   bashPatterns:
-    - '\bhs\s+(upload|fetch|watch|create)\b'
+  - \bhs\s+(upload|fetch|watch|create)\b
+  docs:
+  - https://developers.hubspot.com/docs/api/cms
   importPatterns:
-    - "@hubspot/api-client"
-    - "@hubspot/cli"
+  - '@hubspot/api-client'
+  - '@hubspot/cli'
+  pathPatterns:
+  - '**/cms/**'
+  - '**/pages/**'
+  - '**/blog/**'
+  - '**/templates/**'
+  - '**/*.hubl'
+  - '**/*.html'
+  priority: 4
   promptSignals:
     phrases:
-      - "hubspot cms"
-      - "hubspot page"
-      - "hubspot blog"
-      - "hubdb"
-      - "hubl"
-      - "hubspot template"
-      - "hubspot module"
-      - "site page"
+    - hubspot cms
+    - hubspot page
+    - hubspot blog
+    - hubdb
+    - hubl
+    - hubspot template
+    - hubspot module
+    - site page
+name: cms
+description: HubSpot CMS API — pages, blog posts, templates, modules, HubDB, site tree. Use when building or managing HubSpot-hosted content programmatically.
 ---
 
 ## What It Is & When to Use It

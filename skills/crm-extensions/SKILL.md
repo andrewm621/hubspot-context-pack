@@ -1,29 +1,33 @@
 ---
-name: crm-extensions
-description: HubSpot CRM Extensions — custom cards, UI extensions, custom actions, timeline events, calling. Use when building custom UI within the HubSpot CRM interface.
+strata_id: fae3b5b8-ba48-49d5-9ce3-863dceca454f
+type: note
+created: 2026-05-03T19:00:01+00:00
+modified: 2026-05-03T19:00:01.650499644+00:00
 metadata:
-  priority: 4
-  docs:
-    - "https://developers.hubspot.com/docs/api/crm/extensions"
-  pathPatterns:
-    - '**/extensions/**'
-    - '**/cards/**'
-    - '**/ui-extensions/**'
-    - 'app.json'
   bashPatterns:
-    - '\bhs\s+project\b'
+  - \bhs\s+project\b
+  docs:
+  - https://developers.hubspot.com/docs/api/crm/extensions
   importPatterns:
-    - "@hubspot/ui-extensions"
-    - "@hubspot/api-client"
+  - '@hubspot/ui-extensions'
+  - '@hubspot/api-client'
+  pathPatterns:
+  - '**/extensions/**'
+  - '**/cards/**'
+  - '**/ui-extensions/**'
+  - app.json
+  priority: 4
   promptSignals:
     phrases:
-      - "crm extension"
-      - "custom card"
-      - "ui extension"
-      - "hubspot card"
-      - "timeline event"
-      - "calling extension"
-      - "crm sidebar"
+    - crm extension
+    - custom card
+    - ui extension
+    - hubspot card
+    - timeline event
+    - calling extension
+    - crm sidebar
+description: HubSpot CRM Extensions — custom cards, UI extensions, custom actions, timeline events, calling. Use when building custom UI within the HubSpot CRM interface.
+name: crm-extensions
 ---
 
 ## What It Is & When to Use It

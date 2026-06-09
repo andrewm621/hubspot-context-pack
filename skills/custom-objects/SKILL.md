@@ -1,24 +1,28 @@
 ---
+strata_id: 06865679-2ee5-42f2-b59b-8b942d890427
+type: note
+created: 2026-05-03T18:43:28+00:00
+modified: 2026-05-03T18:43:28.720846976+00:00
 name: custom-objects
 description: HubSpot Custom Objects — schema definition, property configuration, associations, and CRUD for non-standard CRM objects.
 metadata:
-  priority: 7
-  pathPatterns:
-    - "**/custom-objects/**"
-    - "**/schemas/**"
+  docs:
+  - https://developers.hubspot.com/docs/api/crm/crm-custom-objects
   importPatterns:
-    - "@hubspot/api-client"
+  - '@hubspot/api-client'
+  pathPatterns:
+  - '**/custom-objects/**'
+  - '**/schemas/**'
+  priority: 7
   promptSignals:
     phrases:
-      - "custom object"
-      - "hubspot schema"
-      - "object definition"
-      - "custom crm object"
-      - "crm schema"
-      - "object type"
-      - "custom properties schema"
-  docs:
-    - "https://developers.hubspot.com/docs/api/crm/crm-custom-objects"
+    - custom object
+    - hubspot schema
+    - object definition
+    - custom crm object
+    - crm schema
+    - object type
+    - custom properties schema
 ---
 
 ## What It Is & When to Use It

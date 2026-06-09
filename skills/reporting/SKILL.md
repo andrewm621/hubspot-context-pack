@@ -1,26 +1,30 @@
 ---
-name: reporting
+strata_id: 95363d37-9988-4c93-9e80-f7d35dd26e2e
+type: note
+created: 2026-05-03T18:58:34+00:00
+modified: 2026-05-03T18:58:34.241423205+00:00
 description: HubSpot Reporting and Analytics API — custom reports, analytics, attribution, deal forecasting. Use when building dashboards or extracting HubSpot analytics data.
 metadata:
-  priority: 4
-  docs:
-    - "https://developers.hubspot.com/docs/api/analytics"
-  pathPatterns:
-    - '**/reports/**'
-    - '**/analytics/**'
-    - '**/dashboard/**'
   bashPatterns: []
+  docs:
+  - https://developers.hubspot.com/docs/api/analytics
   importPatterns:
-    - "@hubspot/api-client"
+  - '@hubspot/api-client'
+  pathPatterns:
+  - '**/reports/**'
+  - '**/analytics/**'
+  - '**/dashboard/**'
+  priority: 4
   promptSignals:
     phrases:
-      - "hubspot report"
-      - "hubspot analytics"
-      - "hubspot dashboard"
-      - "attribution"
-      - "deal forecast"
-      - "funnel report"
-      - "traffic analytics"
+    - hubspot report
+    - hubspot analytics
+    - hubspot dashboard
+    - attribution
+    - deal forecast
+    - funnel report
+    - traffic analytics
+name: reporting
 ---
 
 ## What It Is & When to Use It

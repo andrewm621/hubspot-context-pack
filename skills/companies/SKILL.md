@@ -1,24 +1,28 @@
 ---
-name: companies
+strata_id: 764e7980-72e8-4c19-9554-3a6119f19202
+type: note
+created: 2026-05-03T18:42:19+00:00
+modified: 2026-05-03T18:42:19.996111500+00:00
 description: HubSpot CRM Companies — CRUD, search, domain-based deduplication, and associations with contacts and deals.
+name: companies
 metadata:
-  priority: 7
-  pathPatterns:
-    - "**/companies/**"
-    - "**/company*"
+  docs:
+  - https://developers.hubspot.com/docs/api/crm/companies
   importPatterns:
-    - "@hubspot/api-client"
+  - '@hubspot/api-client'
+  pathPatterns:
+  - '**/companies/**'
+  - '**/company*'
+  priority: 7
   promptSignals:
     phrases:
-      - "hubspot company"
-      - "company property"
-      - "crm company"
-      - "create company"
-      - "update company"
-      - "search companies"
-      - "company domain"
-  docs:
-    - "https://developers.hubspot.com/docs/api/crm/companies"
+    - hubspot company
+    - company property
+    - crm company
+    - create company
+    - update company
+    - search companies
+    - company domain
 ---
 
 ## What It Is & When to Use It

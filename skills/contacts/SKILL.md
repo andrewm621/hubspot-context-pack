@@ -1,25 +1,29 @@
 ---
-name: contacts
-description: HubSpot CRM Contacts — CRUD, search, property management, contact lists, and associations.
+strata_id: f880610e-002f-4262-829e-09f22f4e26b3
+type: note
+created: 2026-05-03T18:41:54+00:00
+modified: 2026-05-03T18:41:54.469893835+00:00
 metadata:
-  priority: 8
-  pathPatterns:
-    - "**/contacts/**"
-    - "**/contact*"
+  docs:
+  - https://developers.hubspot.com/docs/api/crm/contacts
   importPatterns:
-    - "@hubspot/api-client"
+  - '@hubspot/api-client'
+  pathPatterns:
+  - '**/contacts/**'
+  - '**/contact*'
+  priority: 8
   promptSignals:
     phrases:
-      - "hubspot contact"
-      - "contact property"
-      - "contact list"
-      - "crm contact"
-      - "create contact"
-      - "update contact"
-      - "search contacts"
-      - "contact merge"
-  docs:
-    - "https://developers.hubspot.com/docs/api/crm/contacts"
+    - hubspot contact
+    - contact property
+    - contact list
+    - crm contact
+    - create contact
+    - update contact
+    - search contacts
+    - contact merge
+description: HubSpot CRM Contacts — CRUD, search, property management, contact lists, and associations.
+name: contacts
 ---
 
 ## What It Is & When to Use It

@@ -1,24 +1,28 @@
 ---
+strata_id: 112a72f6-b5ac-4c18-be5c-72f6997ca544
+type: note
+created: 2026-05-03T18:45:21+00:00
+modified: 2026-05-03T18:45:21.941077516+00:00
 name: associations
 description: HubSpot Associations v4 — linking CRM objects, association type IDs, custom labels, batch operations, and schema management.
 metadata:
-  priority: 6
-  pathPatterns:
-    - "**/associations/**"
-    - "**/association*"
+  docs:
+  - https://developers.hubspot.com/docs/api/crm/associations
   importPatterns:
-    - "@hubspot/api-client"
+  - '@hubspot/api-client'
+  pathPatterns:
+  - '**/associations/**'
+  - '**/association*'
+  priority: 6
   promptSignals:
     phrases:
-      - "hubspot association"
-      - "crm association"
-      - "object relationship"
-      - "link contact company"
-      - "associate deal"
-      - "association type"
-      - "association label"
-  docs:
-    - "https://developers.hubspot.com/docs/api/crm/associations"
+    - hubspot association
+    - crm association
+    - object relationship
+    - link contact company
+    - associate deal
+    - association type
+    - association label
 ---
 
 ## What It Is & When to Use It

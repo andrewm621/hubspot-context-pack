@@ -1,3 +1,10 @@
+---
+strata_id: 19a76e9a-6096-430e-a951-2843792ead31
+type: note
+created: 2026-05-03T18:40:42+00:00
+modified: 2026-05-03T18:40:42.502390987+00:00
+---
+
 # HubSpot Platform — Knowledge Graph
 
 > Injected by hubspot-context-pack on session start. Provides orientation, decision matrices, and architecture patterns for the HubSpot platform.
